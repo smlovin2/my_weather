@@ -1,0 +1,12 @@
+body, html{
+  height: 100%;
+}
+
+.hero {
+  background: url('weather.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}

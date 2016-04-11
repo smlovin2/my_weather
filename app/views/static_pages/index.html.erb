@@ -1,4 +1,4 @@
 <%= form_tag weathers_show_path, method: 'get' do %>
-  <%= text_field_tag :zipcode, params[:zipcode], id: 'zipcode', placeholder: 'Enter Your Zipcode', class: 'form-control', required: true %>
+<%= text_field_tag :zipcode, params[:zipcode], id: 'zipcode', placeholder: 'Enter Your Zipcode (ex. 99212)', class: 'form-control', required: true %>
   <button type='submit' class='btn btn-primary'>Get Weather</button>
 <% end %>

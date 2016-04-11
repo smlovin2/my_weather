@@ -1,2 +1,7 @@
-<h1>Weathers#show</h1>
-<p>Find me in app/views/weathers/show.html.erb</p>
+<h1>Weather</h1>
+<p id='location'><%= location(@response) %></p>
+<p id='conditions'><%= condition(@response) %></p>
+<p id='temperature'><%= temperature(@response) %></p>
+<p id='wind'><%= wind(@response) %></p>
+
+

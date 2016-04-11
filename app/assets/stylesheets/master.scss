@@ -23,6 +23,10 @@ body, html{
   }
 }
 
+.navbar {
+  border-radius: 0px;
+}
+
 @media (max-width: 300px) {
   .content {
     h1 {

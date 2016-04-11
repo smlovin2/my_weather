@@ -1,8 +1,9 @@
-<div class="content col-xs-6 col-xs-offset-3">
+<div class="content col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
   <h1>Weather</h1>
   <div class="frosty">
     <p id='location'><%= location(@response) %></p>
     <p id='conditions'><%= condition(@response) %></p>
+    <%= image_tag 'http://openweathermap.org/img/w/' + icon_id(@response) + '.png' %>
     <p id='temperature'><%= temperature(@response) %></p>
     <p id='wind'><%= wind(@response) %></p>
   </div>

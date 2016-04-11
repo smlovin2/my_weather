@@ -36,15 +36,21 @@ RSpec.describe WeathersHelper, type: :helper do
     end
   end
   
-  describe 'temperature' do
+  describe '#temperature' do
     it 'returns the temperature' do
       expect(helper.temperature(@response)).to eq('Temperature(F): 54.55')
     end
   end
   
-  describe 'wind' do
+  describe '#wind' do
     it 'returns the wind speed and direction' do
       expect(helper.wind(@response)).to eq('Wind: WNW 2.15mph')
+    end
+  end
+  
+  describe '#icon_id' do
+    it 'returns the icon id' do
+      expect(helper.icon_id(@response)).to eq('01n')
     end
   end
 end

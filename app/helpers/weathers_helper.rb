@@ -15,6 +15,10 @@ module WeathersHelper
     "Wind: #{degrees_to_compass(response['wind']['deg'])} #{response['wind']['speed']}mph"
   end
   
+  def icon_id(response)
+    response['weather'][0]['icon']
+  end
+  
   private
   
   COMPASS_DIRECTIONS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"]

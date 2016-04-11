@@ -1,6 +1,6 @@
 class WeathersController < ApplicationController
   def show
-    @response = HTTParty.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zipcode_param + ',us&appid=' + ENV['open_weather_map_api_key'])
+    @response = HTTParty.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zipcode_param + ',us&units=imperial&appid=' + ENV['open_weather_map_api_key'])
   end
   
   private

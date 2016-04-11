@@ -1,12 +1,29 @@
 body, html{
-  height: 100%;
-}
-
-.hero {
   background: url('weather.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  #zipcode {
+    display: inline-block;
+    width: 50%;
+  }
+  .frosty {
+    background: rgba(0, 0, 0, 0.65);
+    
+    p {
+      font-size: 36px;
+    }
+  }
 }
